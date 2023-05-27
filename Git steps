@@ -1,0 +1,28 @@
+
+
+How to create a local Git repository and start tracking changes?
+1. Navigate to your project folder with cd command
+   cd C:\Users\Username\Desktop\Project
+2. Intialize a git repository
+   git init
+3. Add files to the staging area
+   git add . -> adds all files
+   git add <fileName> -> adds a specific file
+4. Commit the changes in Staging area
+   git commit -m "commit message"
+5. Check the status at any point
+   git status
+6. Check the commit log 
+   git log
+   git log --pretty=oneline
+   git log -p               
+How to push a local repository to a remote?
+1. Create a remote repo
+2. Connect the local repostory with the remote
+   git remote add <nameOfRemoteRepo> <urlToRemoteRepo>
+   git remote add origin https://github.com/dtacademyb11/Demo.git
+3. Rename the remote main branch name  
+   git branch -M main
+4. Push the changes
+   git push -u origin main (authorization must be done if it is the first time you are pushing to this remote repo)
+   every subsequent push is done with 'git push'
